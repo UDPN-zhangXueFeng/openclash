@@ -25,6 +25,7 @@ DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai.com
+DOMAIN-SUFFIX,v0.dev
 # Cursor相关域名
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,api2.cursor.sh
