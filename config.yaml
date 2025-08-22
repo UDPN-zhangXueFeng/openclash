@@ -4,7 +4,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "https://candytally10.vip/tgyun_sub?token=a270d1f828fca34fb8147788a8b71cd7"
+    url: ""
     type: http
     interval: 86400
     health-check:
