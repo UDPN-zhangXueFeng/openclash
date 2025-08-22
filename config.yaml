@@ -148,6 +148,7 @@ rules:
   - RULE-SET,private_domain,直连
   - IP-CIDR,10.0.7.173/32,直连
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
+  - DOMAIN-SUFFIX,hupu.com,🚀 默认代理
   - RULE-SET,proxylite,🚀 默认代理
   - RULE-SET,ai,🤖 ChatGPT
   - DOMAIN-SUFFIX,cursor.sh,🖱️ cursor
