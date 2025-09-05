@@ -103,6 +103,7 @@ proxy-groups:
   - {name: 🚀 默认代理, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 台湾故转, 🔯 韩国故转, 🔯 德国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 台湾自动, ♻️ 韩国自动, ♻️ 德国自动, 🖱️ cursor, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇹🇼 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇹🇭 泰国节点, 🇦🇷 阿根廷节点, 🇹🇷 土耳其节点, 🇬🇧 英国节点, 🌐 全部节点, 直连]}
   - {name: 📹 YouTube, type: select, proxies: [🔯 美国故转, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, ♻️ 美国自动, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🍀 Google, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
+  - {name: 🖱️ cursor, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|台|JP|TW|(?i)Japan|Taiwan))^((?!(港|韩|新|美|德)).)*$"}
   - {name: 🤖 ChatGPT, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 👨🏿‍💻 GitHub, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🐬 OneDrive, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
@@ -137,7 +138,6 @@ proxy-groups:
   - {name: ♻️ 台湾自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$"}
   - {name: ♻️ 韩国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$"}
   - {name: ♻️ 德国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(德|DE|(?i)Germany))^((?!(港|台|日|韩|新|美)).)*$"}
-  - {name: 🖱️ cursor, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|台|JP|TW|(?i)Japan|Taiwan))^((?!(港|韩|新|美|德)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
 
@@ -150,11 +150,11 @@ rules:
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
   - DOMAIN-SUFFIX,hupu.com,🚀 默认代理
   - RULE-SET,proxylite,🚀 默认代理
-  - RULE-SET,ai,🤖 ChatGPT
   - DOMAIN-SUFFIX,cursor.sh,🖱️ cursor
   - DOMAIN-SUFFIX,api2.cursor.sh,🖱️ cursor
   - DOMAIN-SUFFIX,api3.cursor.sh,🖱️ cursor
   - DOMAIN-SUFFIX,repo42.cursor.sh,🖱️ cursor
+  - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
   - RULE-SET,google_domain,🍀 Google
