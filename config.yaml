@@ -4,7 +4,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: ""
+    url: "http://114.132.219.239:9888/tgyunsub?token=8e341dbe3d89e55b60e2c654cf672b38"
     type: http
     interval: 86400
     health-check:
@@ -12,7 +12,24 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
-
+  Airport2:
+    url: "https://api-hy.02000.xin/adf0b1976c43e82dab91f7c6e3b4d258?token=0cbe6dc047268615bf9211b995d81b02"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
+  Airport3:
+    url: "http://xui.0718zxf.site:2096/sub/2twxcg32wuno09xt"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
 # 节点信息
 proxies:
   - {name: 直连, type: direct}
@@ -103,7 +120,7 @@ proxy-groups:
   - {name: 🚀 默认代理, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 台湾故转, 🔯 韩国故转, 🔯 德国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 台湾自动, ♻️ 韩国自动, ♻️ 德国自动, 🖱️ cursor, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇹🇼 台湾节点, 🇰🇷 韩国节点, 🇩🇪 德国节点, 🇹🇭 泰国节点, 🇦🇷 阿根廷节点, 🇹🇷 土耳其节点, 🇬🇧 英国节点, 🌐 全部节点, 直连]}
   - {name: 📹 YouTube, type: select, proxies: [🔯 美国故转, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, ♻️ 美国自动, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🍀 Google, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
-  - {name: 🖱️ cursor, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|台|JP|TW|(?i)Japan|Taiwan))^((?!(港|韩|新|美|德)).)*$"}
+  - {name: 🖱️ cursor, type: select, proxies: [🔯 日本故转, 🔯 美国故转, ♻️ 日本自动, ♻️ 美国自动, 🇯🇵 日本节点, 🇺🇲 美国节点]}
   - {name: 🤖 ChatGPT, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 👨🏿‍💻 GitHub, type: select, proxies: [🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
   - {name: 🐬 OneDrive, type: select, proxies: [🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 直连]}
@@ -148,7 +165,6 @@ rules:
   - RULE-SET,private_domain,直连
   - IP-CIDR,10.0.7.173/32,直连
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
-  - DOMAIN-SUFFIX,hupu.com,🚀 默认代理
   - RULE-SET,proxylite,🚀 默认代理
   - DOMAIN-SUFFIX,cursor.sh,🖱️ cursor
   - DOMAIN-SUFFIX,api2.cursor.sh,🖱️ cursor
