@@ -30,6 +30,15 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
+  Airport4:
+    url: "http://3xui.0718zxf.site:2096/sub/e07w86nn31zxqfdl"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
 # 节点信息
 proxies:
   - {name: 直连, type: direct}
