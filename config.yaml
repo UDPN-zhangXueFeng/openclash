@@ -179,6 +179,7 @@ rules:
   - DOMAIN-SUFFIX,api2.cursor.sh,🖱️ cursor
   - DOMAIN-SUFFIX,api3.cursor.sh,🖱️ cursor
   - DOMAIN-SUFFIX,repo42.cursor.sh,🖱️ cursor
+  - DOMAIN-KEYWORD,claudexai,cursor
   - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
