@@ -173,9 +173,8 @@ rules:
   - RULE-SET,private_ip,直连
   - RULE-SET,private_domain,直连
   - IP-CIDR,10.0.7.173/32,直连
-  - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
+  - RULE-SET,proxylite1,🖱️ cursor
   - RULE-SET,proxylite,🚀 默认代理
-
   - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
@@ -205,6 +204,7 @@ rule-anchor:
 rule-providers: 
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   proxylite: { <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/proxy.list"}
+  proxylite1: { <<: *class, url: "https://raw.githubusercontent.com/UDPN-zhangXueFeng/openclash/refs/heads/main/cursor_proxy.list?token=GHSAT0AAAAAADMZGQ7LKY5YBZ5VR2EMFHES2HHQBIA"}
   ai: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
