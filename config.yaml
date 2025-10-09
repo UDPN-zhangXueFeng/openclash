@@ -4,7 +4,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "http://114.132.219.239:9888/tgyunsub?token=8e341dbe3d89e55b60e2c654cf672b38"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -13,7 +13,7 @@ proxy-providers:
       interval: 300
     proxy: 直连
   Airport2:
-    url: "https://api-hy.02000.xin/adf0b1976c43e82dab91f7c6e3b4d258?token=0cbe6dc047268615bf9211b995d81b02"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -22,7 +22,7 @@ proxy-providers:
       interval: 300
     proxy: 直连
   Airport3:
-    url: "http://xui.0718zxf.site:2096/sub/2twxcg32wuno09xt"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -31,7 +31,7 @@ proxy-providers:
       interval: 300
     proxy: 直连
   Airport4:
-    url: "http://3xui.0718zxf.site:2096/sub/e07w86nn31zxqfdl"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -206,9 +206,9 @@ rule-anchor:
 rule-providers: 
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   proxylite: { <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/proxy.list"}
-  proxylite1: { <<: *class, url: "https://raw.githubusercontent.com/UDPN-zhangXueFeng/openclash/refs/heads/main/cursor_proxy.list?token=GHSAT0AAAAAADMZGQ7LKY5YBZ5VR2EMFHES2HHQBIA"}
-  proxylite2: { <<: *class, url: "https://raw.githubusercontent.com/UDPN-zhangXueFeng/openclash/refs/heads/main/custom_proxy.list?token=GHSAT0AAAAAADMZGQ7K4NZ5X3DCNAG55O2G2HHQ7FA"}
-  proxylite3: { <<: *class, url: "https://raw.githubusercontent.com/UDPN-zhangXueFeng/openclash/refs/heads/main/zhi_proxy.list?token=GHSAT0AAAAAADMZGQ7KEUFPICM2OZTR4YHM2HHQQ2Q"}
+  proxylite1: { <<: *class, url: "https://raw.githubusercontent.com/UDPN-zhangXueFeng/openclash/refs/heads/main/cursor_proxy.list"}
+  proxylite2: { <<: *class, url: "https://raw.githubusercontent.com/UDPN-zhangXueFeng/openclash/refs/heads/main/custom_proxy.list"}
+  proxylite3: { <<: *class, url: "https://raw.githubusercontent.com/UDPN-zhangXueFeng/openclash/refs/heads/main/zhi_proxy.list"}
   ai: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
