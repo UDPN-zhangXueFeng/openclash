@@ -1,0 +1,19 @@
+# 代理补充列表
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.ai
+DOMAIN-KEYWORD,cursor
+DOMAIN,cursor.sh
+
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,api2.cursor.sh
+DOMAIN-SUFFIX,api3.cursor.sh
+DOMAIN-SUFFIX,repo42.cursor.sh
+
+
+
+DOMAIN-KEYWORD,claudexai
+
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,api.openai.com
+DOMAIN-KEYWORD,openai
+DOMAIN,chat.openai.com
