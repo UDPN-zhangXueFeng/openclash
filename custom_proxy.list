@@ -1,9 +1,3 @@
 # 自定义代理
 
-# DOMAIN-SUFFIX,douyin.com
-DOMAIN-SUFFIX,luna-api.douyin.com
-DOMAIN-SUFFIX,qishui.douyin.com
-DOMAIN-SUFFIX,luna-web.douyin.com
-DOMAIN-SUFFIX,douyinvod.com
-DOMAIN-SUFFIX,music.douyin.com
-DOMAIN-SUFFIX,qishui.com
+DOMAIN-KEYWORD,qishui
