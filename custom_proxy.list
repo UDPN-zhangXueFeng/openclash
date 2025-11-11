@@ -1,4 +1,5 @@
 # 自定义代理
 
 DOMAIN-KEYWORD,qishui
+DOMAIN-KEYWORD,codemirror
 IP-CIDR,103.118.245.107/32
