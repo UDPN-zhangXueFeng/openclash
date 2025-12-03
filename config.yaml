@@ -9,7 +9,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: https://114.132.219.239:9888/tgyunsub?token=abac12ff8a8158acdcb622ea039ff5b6
+      url: 
       interval: 300
     proxy: 直连
   Airport2:
@@ -18,7 +18,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: http://103.118.245.107:2096/sub/e07w86nn31zxqfdl
+      url: 
       interval: 300
     proxy: 直连
 
