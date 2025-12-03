@@ -2,3 +2,14 @@
 
 IP-CIDR,158.178.241.249/32
 IP-CIDR,10.0.50.12/32
+
+# 网易云专杀，让它强制走物理网卡，绕过 TUN 和 Fake-IP
+DOMAIN,music.163.com,DIRECT
+DOMAIN,interface.music.163.com,DIRECT
+DOMAIN,interface3.music.163.com,DIRECT
+DOMAIN,music.126.net,DIRECT
+DOMAIN-SUFFIX,163.com,DIRECT
+DOMAIN-SUFFIX,126.net,DIRECT
+IP-CIDR,59.111.0.0/16,DIRECT,no-resolve
+IP-CIDR,101.71.0.0/16,DIRECT,no-resolve
+IP-CIDR,103.126.92.0/22,DIRECT,no-resolve
