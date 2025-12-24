@@ -4,7 +4,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "https://114.132.219.239:9888/tgyunsub?token=889dbfbdd27084fcc5ad12c61dde2811"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -13,7 +13,7 @@ proxy-providers:
       interval: 300
     proxy: 直连
   Airport2:
-    url: "http://3xui.0718zxf.site:2096/sub/e07w86nn31zxqfdl"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -22,7 +22,7 @@ proxy-providers:
       interval: 300
     proxy: 直连
   Airport3:
-    url: "https://cyberguard.cfd/api/v1/client/subscribe?token=56ecab4156200b9b469c59267a85b1a4"
+    url: ""
     type: http
     interval: 86400
     health-check:
