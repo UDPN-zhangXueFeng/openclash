@@ -4,24 +4,32 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: ""
+    url: "https://114.132.219.239:9888/tgyunsub?token=889dbfbdd27084fcc5ad12c61dde2811"
     type: http
     interval: 86400
     health-check:
       enable: true
-      url: https://114.132.219.239:9888/tgyunsub?token=abac12ff8a8158acdcb622ea039ff5b6
+      url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
   Airport2:
-    url: ""
+    url: "http://3xui.0718zxf.site:2096/sub/e07w86nn31zxqfdl"
     type: http
     interval: 86400
     health-check:
       enable: true
-      url: http://103.118.245.107:2096/sub/e07w86nn31zxqfdl
+      url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
-
+  Airport3:
+    url: "https://cyberguard.cfd/api/v1/client/subscribe?token=56ecab4156200b9b469c59267a85b1a4"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
 # 节点信息
 proxies:
   - {name: 直连, type: direct}
@@ -127,6 +135,7 @@ dns:
   nameserver-policy:
     "rule-set:cn_domain": [223.5.5.5, 119.29.29.29]
     "rule-set:private_domain": [223.5.5.5, 119.29.29.29]
+    "rule-set:netease_domain": [223.5.5.5, 119.29.29.29]
     "rule-set:geolocation-!cn": [https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]
  
 # 出站策略，根据自己情况调整每个策略里分组排序，增删都可以，比如把美国自动放到第一个，比如删除香港故转，注意别漏掉表情逗号等。
@@ -177,6 +186,16 @@ proxy-groups:
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
+  - RULE-SET,netease_domain,直连
+  - DOMAIN-KEYWORD,netease,直连
+  - DOMAIN-KEYWORD,163,直连
+  - PROCESS-NAME,cloudmusic,直连
+  - PROCESS-NAME,neteasemusic,直连
+  - PROCESS-NAME,neteasemusic*,直连
+  - IP-CIDR,59.111.0.0/16,直连,no-resolve
+  - IP-CIDR,101.71.0.0/16,直连,no-resolve
+  - IP-CIDR,103.126.92.0/22,直连,no-resolve
+  - IP-CIDR,45.254.48.0/22,直连,no-resolve
   - RULE-SET,proxylite1,🖱️ cursor
   - RULE-SET,proxylite2,🚀 默认代理
   - RULE-SET,proxylite3,直连
@@ -196,10 +215,6 @@ rules:
   - RULE-SET,netflix_domain,🎥 NETFLIX
   - RULE-SET,paypal_domain,💶 PayPal
   - RULE-SET,netease_domain,直连
-  - IP-CIDR,59.111.0.0/16,直连,no-resolve
-  - IP-CIDR,101.71.0.0/16,直连,no-resolve
-  - IP-CIDR,103.126.92.0/22,直连,no-resolve
-  - IP-CIDR,45.254.48.0/22,直连,no-resolve
   - RULE-SET,apple_ip,直连,no-resolve
   - RULE-SET,google_ip,🍀 Google,no-resolve
   - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
