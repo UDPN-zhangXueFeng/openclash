@@ -2,6 +2,8 @@
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.ai
 DOMAIN-KEYWORD,cursor
+DOMAIN-KEYWORD,packyapi
+DOMAIN-KEYWORD,foxcode
 DOMAIN,cursor.sh
 
 DOMAIN-SUFFIX,cursor.sh
