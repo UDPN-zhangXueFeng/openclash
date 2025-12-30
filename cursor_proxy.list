@@ -3,6 +3,9 @@ DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.ai
 DOMAIN-KEYWORD,cursor
 
+# polymarket 走cursor代理
+DOMAIN-KEYWORD,polymarket
+
 DOMAIN,cursor.sh
 
 DOMAIN-SUFFIX,cursor.sh
