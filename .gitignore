@@ -1,0 +1,9 @@
+# Local private configs with real subscriptions.
+config.local.yaml
+config.private.yaml
+config.*.local.yaml
+config.*.private.yaml
+
+# Existing local working copies in this repo.
+config copy.yaml
+config.optimized.yaml
