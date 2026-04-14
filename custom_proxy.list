@@ -5,3 +5,20 @@ DOMAIN-KEYWORD,codemirror
 DOMAIN-KEYWORD,v0
 
 IP-CIDR,103.118.245.107/32
+
+# X (Twitter)
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,abs.twimg.com
+DOMAIN-SUFFIX,pbs.twimg.com
+DOMAIN-SUFFIX,video.twimg.com
+DOMAIN-KEYWORD,twitter
+DOMAIN-KEYWORD,twimg
+
+# Grok (xAI)
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.x.ai
+DOMAIN-KEYWORD,grok
