@@ -14,6 +14,12 @@ DOMAIN-SUFFIX,126.net,DIRECT
 IP-CIDR,59.111.0.0/16,DIRECT,no-resolve
 IP-CIDR,101.71.0.0/16,DIRECT,no-resolve
 IP-CIDR,103.126.92.0/22,DIRECT,no-resolve
+
+# 汽水音乐
+DOMAIN-SUFFIX,qishui.com
+DOMAIN,music.douyin.com
+DOMAIN-KEYWORD,qishui
+
 DOMAIN-KEYWORD,packyapi
 DOMAIN-KEYWORD,foxcode
 DOMAIN-KEYWORD,cubence
