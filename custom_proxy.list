@@ -30,3 +30,31 @@ DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.x.ai
 DOMAIN-KEYWORD,grok
+
+# Lazada（东南亚站点及当前 DNS IPv4）
+DOMAIN-SUFFIX,lazada.com
+DOMAIN-SUFFIX,lazada.sg
+DOMAIN-SUFFIX,lazada.com.my
+DOMAIN-SUFFIX,lazada.co.th
+DOMAIN-SUFFIX,lazada.vn
+DOMAIN-SUFFIX,lazada.com.ph
+DOMAIN-SUFFIX,lazada.co.id
+
+# 2026-10-16 从 223.5.5.5 查询；CDN 调度可能导致地址变化
+IP-CIDR,47.246.165.39/32,no-resolve
+IP-CIDR,47.246.165.72/32,no-resolve
+IP-CIDR,47.246.165.110/32,no-resolve
+IP-CIDR,47.246.165.111/32,no-resolve
+IP-CIDR,47.246.165.115/32,no-resolve
+IP-CIDR,47.246.165.182/32,no-resolve
+IP-CIDR,47.246.167.7/32,no-resolve
+IP-CIDR,47.246.167.10/32,no-resolve
+IP-CIDR,47.246.167.114/32,no-resolve
+IP-CIDR,47.246.167.129/32,no-resolve
+IP-CIDR,47.246.167.130/32,no-resolve
+IP-CIDR,47.246.167.210/32,no-resolve
+IP-CIDR,47.246.167.252/32,no-resolve
+IP-CIDR,47.246.167.254/32,no-resolve
+IP-CIDR,155.102.4.12/32,no-resolve
+IP-CIDR,155.102.4.13/32,no-resolve
+IP-CIDR,155.102.4.15/32,no-resolve
